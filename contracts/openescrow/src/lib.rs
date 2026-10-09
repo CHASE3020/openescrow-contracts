@@ -9,7 +9,9 @@ pub struct OpenEscrowContract;
 impl OpenEscrowContract {
     pub fn initialize(env: Env, admin: Address) {
         admin.require_auth();
-        env.storage().instance().set(&symbol_short!("ADMIN"), &admin);
+        env.storage()
+            .instance()
+            .set(&symbol_short!("ADMIN"), &admin);
     }
 
     pub fn record(env: Env, actor: Address, value: i128) {
@@ -19,21 +21,26 @@ impl OpenEscrowContract {
     }
 
     pub fn read(env: Env) -> i128 {
-        env.storage().instance().get(&symbol_short!("VALUE")).unwrap_or(0)
+        env.storage()
+            .instance()
+            .get(&symbol_short!("VALUE"))
+            .unwrap_or(0)
     }
 }
 
 #[cfg(test)]
 mod test {
     use super::*;
+    use soroban_sdk::testutils::Address as _;
     use soroban_sdk::Env;
 
     #[test]
     fn records_value() {
         let env = Env::default();
+        env.mock_all_auths();
         let id = env.register(OpenEscrowContract, ());
         let client = OpenEscrowContractClient::new(&env, &id);
-        let actor = env.accounts().generate();
+        let actor = Address::generate(&env);
         client.initialize(&actor);
         client.record(&actor, &42);
         assert_eq!(client.read(), 42);

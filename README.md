@@ -98,8 +98,6 @@ make test   # cargo test
 make fmt    # cargo fmt --all -- --check
 ```
 
-> ⚠️ **Known issue (pre-existing baseline):** `make test` does not compile yet — the test module calls the removed `env.accounts()` API (needs updating to `Address::generate`, **TODO**), and `make fmt` reports formatting drift. `make build` additionally requires the Stellar CLI, which is not part of this repo.
-
 ### Building / deploying
 
 ```bash
