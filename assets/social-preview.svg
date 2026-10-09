@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="OpenEscrow preview">
+  <defs>
+    <linearGradient id="oeBanner" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151007"/>
+      <stop offset="0.55" stop-color="#451A03"/>
+      <stop offset="1" stop-color="#92400E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#oeBanner)"/>
+  <g stroke="#F59E0B" fill="none" opacity="0.28">
+    <circle cx="1470" cy="160" r="120" stroke-width="5"/>
+    <circle cx="1470" cy="160" r="185" stroke-width="4"/>
+    <circle cx="1470" cy="160" r="250" stroke-width="3"/>
+    <circle cx="120" cy="770" r="120" stroke-width="5"/>
+    <circle cx="120" cy="770" r="185" stroke-width="4"/>
+    <circle cx="120" cy="770" r="250" stroke-width="3"/>
+  </g>
+  <g fill="#FDE68A" opacity="0.45">
+    <circle cx="300" cy="700" r="9"/>
+    <circle cx="430" cy="700" r="9"/>
+    <circle cx="560" cy="700" r="9"/>
+    <circle cx="1040" cy="200" r="9"/>
+    <circle cx="1170" cy="200" r="9"/>
+    <circle cx="1300" cy="200" r="9"/>
+  </g>
+  <path d="M300 700 H560 M1040 200 H1300" stroke="#FDE68A" stroke-width="4" opacity="0.35"/>
+  <g transform="translate(800 240)">
+    <g stroke="#FBBF24" fill="none" stroke-linecap="round">
+      <circle cx="0" cy="0" r="66" stroke-width="10"/>
+      <circle cx="0" cy="0" r="34" stroke-width="8"/>
+      <path d="M0 -66 V-46 M0 46 V66 M-66 0 H-46 M46 0 H66" stroke-width="9"/>
+    </g>
+    <g fill="#FEF3C7">
+      <circle cx="-70" cy="112" r="14"/>
+      <circle cx="0" cy="112" r="14"/>
+      <circle cx="70" cy="112" r="14" opacity="0.55"/>
+    </g>
+    <path d="M-70 112 H70" stroke="#FDE68A" stroke-width="5" opacity="0.8"/>
+  </g>
+  <g font-family="Segoe UI, Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="800" y="500" font-size="118" font-weight="700" fill="#FFFBEB">OpenEscrow</text>
+    <text x="800" y="580" font-size="44" font-weight="600" fill="#FBBF24" letter-spacing="8">Stellar • Soroban • Open Source</text>
+    <text x="800" y="660" font-size="34" fill="#FDE68A" opacity="0.9">contracts · on-chain Soroban state and authorization</text>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="OpenEscrow logo">
+  <defs>
+    <linearGradient id="oeBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#451A03"/>
+      <stop offset="1" stop-color="#B45309"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#oeBg)"/>
+  <g stroke="#FEF3C7" fill="none" stroke-linecap="round">
+    <circle cx="256" cy="230" r="138" stroke-width="14"/>
+    <circle cx="256" cy="230" r="86" stroke-width="10"/>
+    <path d="M256 92 V144 M256 316 V368 M118 230 H170 M342 230 H394" stroke-width="12"/>
+    <path d="M158 132 L195 169 M317 291 L354 328 M354 132 L317 169 M195 291 L158 328" stroke-width="10"/>
+  </g>
+  <circle cx="256" cy="230" r="34" fill="#FBBF24" stroke="#FEF3C7" stroke-width="8"/>
+  <path d="M136 432 H376" stroke="#FDE68A" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="136" cy="432" r="22" fill="#FEF3C7"/>
+  <circle cx="256" cy="432" r="22" fill="#FEF3C7"/>
+  <circle cx="376" cy="432" r="22" fill="#FDE68A" opacity="0.55"/>
+</svg>
